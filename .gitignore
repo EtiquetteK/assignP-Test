@@ -11,5 +11,8 @@ target/
 
 # Ignore test reports and log files
 *.txt
-*.xml
+*.log
 *.Ist
+
+# Exception: Do not ignore pom.xml (Maven build configuration)
+!pom.xml
