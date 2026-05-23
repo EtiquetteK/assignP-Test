@@ -5,7 +5,7 @@ import com.PracticalAssignment.assignP.dto.RegisterRequest;
 import com.PracticalAssignment.assignP.model.User;
 import com.PracticalAssignment.assignP.repository.UserRepository;
 import com.PracticalAssignment.assignP.security.JwtUtil;
-import com.PracticalAssignment.assignP.security.TokenBlacklistService;
+import com.PracticalAssignment.assignP.service.TokenBlacklistService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
