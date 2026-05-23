@@ -22,14 +22,9 @@ jobs:
       - name: Grant execute permission for mvnw
         run: chmod +x mvnw
 
-      - name: Run tests
+      - name: Run tests and generate JaCoCo report
         run: |
-          ./mvnw -B test jacoco:report
-
-      - name: Generate test report
-        if: always()
-        run: |
-          ./mvnw -B jacoco:report
+          ./mvnw -B clean test
 
       - name: Upload JaCoCo report
         if: always()
